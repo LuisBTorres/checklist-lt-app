@@ -1,0 +1,14 @@
+# Nombre interno del proyecto (sin espacios)
+name: checklist_lt
+
+# Nombre que se verá en la pantalla del celular (con espacios)
+product: "Checklist by LT"
+
+# Versión de tu app
+version: 1.0.0
+build_number: 1
+
+# Configuración específica de Android
+android:
+  package_name: com.luis.checklistlt
+  icon: icono.png
