@@ -1,4 +1,4 @@
-name: Build Android  APK
+name: Build Android APK
 on:
   push:
     branches: [ principal ] # Se activa al subir cambios a tu rama 'principal'
