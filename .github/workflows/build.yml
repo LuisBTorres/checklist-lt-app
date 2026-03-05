@@ -2,7 +2,8 @@ name: Build Android APK
 
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main
 
 jobs:
   build:
@@ -25,13 +26,15 @@ jobs:
       - name: Install dependencies
         run: |
           pip install --upgrade pip
-          pip install flet[all] reportlab
+          pip install flet[all]
+          pip install reportlab
 
       - name: Build APK
-        run: flet build apk
+        run: |
+          flet build apk
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
           name: checklist-apk
-          path: build/apk/*.apk          path: build/apk/*.apk
+          path: build/apk/*.apk
