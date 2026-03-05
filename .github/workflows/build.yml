@@ -18,7 +18,7 @@ jobs:
         run: pip install flet[all] reportlab
 
       - name: Build APK
-        run: flet build apk --main main.py
+        run: flet build apk
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
